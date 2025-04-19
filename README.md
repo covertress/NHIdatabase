@@ -1,0 +1,20 @@
+# NHIdatabase 🌌
+
+Welcome to **NHIdatabase**, an open-source platform for exploring and sharing encounters with non-human intelligence (NHI), focusing on benevolent light beings and blue beings. Our mission is to create a community-driven database where enthusiasts, researchers, and the curious can document sightings, search historical data, and connect over cosmic experiences.
+
+## Features
+- **Submit Anecdotes**: Share your NHI encounters with details like date, location, and media.
+- **Search Sightings**: Explore a database of sightings, including UFO Search data and user submissions.
+- **Open Source**: Contribute to our codebase and help expand the database.
+
+## Tech Stack
+- **Frontend**: HTML, CSS, JavaScript (Supabase JS client)
+- **Backend**: Supabase (PostgreSQL, Storage)
+- **Deployment**: Vercel
+- **Data Import**: Python (via Replit)
+
+## Getting Started
+1. **Visit the Site**: Check out the live app at [nhidatabase.org](https://nhidatabase.org) (once live).
+2. **Explore the Code**: Clone this repo:
+   ```bash
+   git clone https://github.com/covertress/NHIdatabase.git
