@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHI Database</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Non-Human Intelligence Database</h1>
+        <p>Explore sightings of benevolent light beings and blue beings</p>
+    </header>
+    <main>
+        <section>
+            <h2>Submit an Anecdote</h2>
+            <form id="anecdote-form">
+                <label>Date of Sighting:</label>
+                <input type="date" name="date" required><br>
+                <label>Location:</label>
+                <input type="text" name="location" required><br>
+                <label>Description:</label>
+                <textarea name="description" required></textarea><br>
+                <label>Entity Type:</label>
+                <select name="entityType">
+                    <option value="light being">Light Being</option>
+                    <option value="blue being">Blue Being</option>
+                    <option value="unknown">Unknown</option>
+                </select><br>
+                <label>Witness Name (optional):</label>
+                <input type="text" name="witnessName"><br>
+                <label>Contact Info (optional):</label>
+                <input type="text" name="contactInfo"><br>
+                <label>Media (optional):</label>
+                <input type="file" name="media"><br>
+                <div class="g-recaptcha" data-sitekey="6LeG8h0rAAAAALCsVITka_3oJGSXqc0Zhuv1lK6x"></div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section>
+            <h2>Search Sightings</h2>
+            <form id="search-form">
+                <label>Search Description:</label>
+                <input type="text" name="query"><br>
+                <label>Date Range:</label>
+                <input type="date" name="dateStart">
+                <input type="date" name="dateEnd"><br>
+                <label>Location:</label>
+                <input type="text" name="location"><br>
+                <label>Source Type:</label>
+                <select name="sourceType">
+                    <option value="">All</option>
+                    <option value="anecdote">Anecdote</option>
+                    <option value="ufo-search">UFO Search</option>
+                    <option value="national-archives">National Archives</option>
+                    <option value="news">News</option>
+                    <option value="book">Book</option>
+                </select><br>
+                <label>Entity Type:</label>
+                <select name="entityType">
+                    <option value="">All</option>
+                    <option value="light being">Light Being</option>
+                    <option value="blue being">Blue Being</option>
+                    <option value="unknown">Unknown</option>
+                </select><br>
+                <button type="submit">Search</button>
+            </form>
+            <div id="results"></div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
