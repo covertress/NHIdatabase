@@ -1,0 +1,12 @@
+{
+  "name": "nhidatabase-ui",
+  "version": "1.0.0",
+  "description": "NHI Database UI",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0"
+  }
+}
